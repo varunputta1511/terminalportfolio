@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio | terminal Welcome to my portfolio! — Type help for a list of supported commands.">
+  <meta name="keywords" content="varun, varunputta, portfolio, HTML, CSS, varun_putta">
+  <meta name="author" content="Varun Putta">
+  <meta http-equiv="refresh" content="250">
+  <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon" />
+  <link href="main.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/39565093f3.js""></script>
+    <script>function close_window() {
+        if (confirm(" Close Window?")) { window.close(); }
+      } </script>
+       <script 
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+    $.getJSON('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=varun&api_key=917b9aecc8bac40a4de7c82735304124&format=json',
+
+      function (data) {
+        let artist = document.getElementById("song")
+        let name = document.getElementById("track")
+
+
+        track = $(".track"),
+          artistVal = data.recenttracks.track[0].artist["#text"],
+          trackVal = data.recenttracks.track[0].name;
+
+
+        artist.append(artistVal);
+        name.append(trackVal);
+
+
+      });
+
+  </script>
+  <title>Varun Putta</title>
+</head>
+
+<body style="font-family: 'Ubuntu', sans-serif;" class="overflow-hidden lazy text-[1.1rem] overflow-y-scroll">
+
+  <div class="m-2 relative overflow-hidden" onclick="document.getElementById('texter').focus();">
+
+    <div
+      class="bg-[#1A1825D9] border-[#c4a7e7] border rounded-[7px] shadow-xl shadow-[#1d1e1fb4] resize overflow-y-scroll backdrop-blur-none transition-backdrop-filter duration-700 hover:backdrop-blur-lg"
+      style="max-height: calc(100vh + 2rem);">
+
+      <header>
+        <p class="p-2 text-center text-slate-400">
+          <a href="https://github.com/varunputta/" target="blank"><i
+              class="fa-brands fa-github pt-[2.5px] text-xl float-left text-slate-500 hover:text-pink-800"></i>varun@cgeTsec1511</a>
+          <a href="javascript:close_window();"><i
+              class="fa-solid fa-circle-xmark pt-[2.5px] text-xl justify-end text-slate-500 hover:text-red-500 items-end  float-right"></i></a>
+        </p>
+        <hr class="border-[#9893a5]">
+      </header>
+      <div class="p-4">
+        <div class="flex flex-col md:flex-row">
+          <pre
+            class="ascii pt-2 pb-5 prose lg:prose-xl text-[#9ccfd8B3] whitespace-pre-wrap inline-block break-words leading-none"
+            style="font-family: monospace,-webkit-pictograph;">
+░█░█░█▀█░█▀▄░█░█░█▀█
+░▀▄▀░█▀█░█▀▄░█░█░█░█
+░░▀░░▀░▀░▀░▀░▀▀▀░▀░▀                                
+            </pre>
+          <div class="pl-2 float-right" ; style="font-family: 'Ubuntu', sans-serif;">
+            <div class="text-[#9ccfd8] md:text-[16px] text-[15px]"><i
+                class="fa-solid fa-address-card pr-[0.9rem]"></i>Varun Putta
+              <pre class="text-[#9ccfd8]">-----------------------</pre>
+
+            </div>
+
+            <a href="https://drive.google.com/file/d/1EGT2FQ9mqf5sOBBd-NTItYinrLB0hhir/view?usp=drive_link" target="blank">
+              <div class="text-[#9ccfd8] text-[17.3px]"><i
+                  class="fa-solid fa-file-invoice pr-[1rem] justify-items-start"></i>Resume<a
+                  href="https://drive.google.com/file/d/1EGT2FQ9mqf5sOBBd-NTItYinrLB0hhir/view?usp=drive_link"
+                  target="blank" class="text-[14.8px] p-1">→ &nbsp;Download my resume....</a></div>
+              <a href="https://github.com/varunputta1511" target="blank">
+                <div class="text-[#9ccfd8] text-[17.3px]"><i
+                    class="fa-brands fa-github pr-[0.7rem] justify-items-start"></i>Github<a
+                    href="https://github.com/varunputta1511" target="blank" class="text-[14.8px] p-1 ">→
+                    &nbsp;github/varunputta1511</a></div>
+                  <a href="https://www.linkedin.com/in/varunputta/" target="blank">
+                    <div class="text-[#9ccfd8] text-[17.3px]"><i
+                        class="fa-brands fa-linkedin-in pr-[0.9rem] justify-items-start"></i>Linkedin<a
+                        href="https://www.linkedin.com/in/varunputta/" target="blank"
+                        class="text-[14.8px] p-1">→ &nbsp;linkedin/varunputta</a></div>
+                    <a href="https://www.instagram.com/varunputta_/" target="blank">
+                      <div class="text-[#9ccfd8] text-[17.3px]"><i
+                          class="fa-brands fa-instagram pr-[0.9rem] justify-items-start"></i>Instagram<a
+                          href="https://www.instagram.com/varunputta_/" target="blank" class="text-[14.8px] p-1">→
+                          &nbsp;instagram/varunputta_</a></div>
+                      
+          </div>
+        </div>
+        <div id="terminal">
+          <a id="before"></a>
+        </div>
+        <div id="command" onclick="$('texter').focus();">
+          <input type="text" id="texter" class="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); 
+                   moveIt(this.value.length, event)" onkeypress="typeIt(this, event);"></input>
+          <div id="liner">
+            <span id="typer"></span><b class="cursor" id="cursor">█</b>
+            <div class="list"></div>
+
+          </div>
+        </div>
+        <footer class="lg:pt-[28.5%] pt-[100%]">
+          
+    </footer>
+    <div>
+
+      <div style=" font-size: 12px;"><span>Terminal-styled
+          portfolio</span> by <a>Varun</a>
+      </div>
+    </div>
+    <script>
+      // Function to check if the specific key combination is pressed
+      function checkKeyCombination(event) {
+        // Check if "Ctrl", "Alt", and "F8" keys are pressed
+        if (event.ctrlKey&&event.altKey) {
+          // Redirect to the desired page
+          window.location.href = "#"; // Replace with the URL of the page you want to load
+        }
+      }
+
+      // Event listener to detect key press
+      document.addEventListener("keydown", checkKeyCombination);
+    </script>
+    <script src="./js/caret.js"></script>
+    <script src="./js/commands.js"></script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
